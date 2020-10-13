@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class WebViewContainer extends StatefulWidget {
   final url;
-  var isDarkMode;
+  final isDarkMode;
 
   WebViewContainer(this.url, this.isDarkMode);
 

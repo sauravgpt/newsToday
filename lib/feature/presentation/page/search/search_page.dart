@@ -159,6 +159,7 @@ class _SearchPageState extends State<SearchPage> {
                                     child: WidgetItemNews(
                                       itemArticle: itemArticle,
                                       strPublishedAt: strPublishedAt,
+                                      isDarkMode: isDarkTheme,
                                     ),
                                   );
                                 },

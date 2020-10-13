@@ -8,7 +8,7 @@ import 'package:url_launcher/url_launcher.dart';
 class WidgetItemNews extends StatelessWidget {
   final ItemArticleTopHeadlinesNewsResponseModel itemArticle;
   final String strPublishedAt;
-  var isDarkMode;
+  final isDarkMode;
 
   WidgetItemNews({
     @required this.itemArticle,
