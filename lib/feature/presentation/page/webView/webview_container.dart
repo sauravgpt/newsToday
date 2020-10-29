@@ -21,40 +21,43 @@ class _WebViewContainerState extends State<WebViewContainer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        actions: <Widget>[
-          Opacity(
-            opacity: 0,
-            child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 16),
-              child: Icon(Icons.access_alarm),
-            ),
-          )
-        ],
-        iconTheme: IconThemeData(
-          color: widget.isDarkMode ? Colors.white : Colors.black45,
-        ),
-        backgroundColor: !widget.isDarkMode ? Colors.white : Colors.black45,
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'News',
-              style: TextStyle(
-                fontSize: 35,
-                color: widget.isDarkMode ? Colors.white : Colors.black87,
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(35.0),
+        child: AppBar(
+          actions: <Widget>[
+            Opacity(
+              opacity: 0,
+              child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 16),
+                child: Icon(Icons.access_alarm),
               ),
-            ),
-            Text(
-              'Today',
-              style: TextStyle(
-                fontSize: 35,
-                color: Colors.blue,
-              ),
-            ),
+            )
           ],
+          iconTheme: IconThemeData(
+            color: widget.isDarkMode ? Colors.white : Colors.black45,
+          ),
+          backgroundColor: !widget.isDarkMode ? Colors.white : Colors.black45,
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'News',
+                style: TextStyle(
+                  fontSize: 25,
+                  color: widget.isDarkMode ? Colors.white : Colors.black87,
+                ),
+              ),
+              Text(
+                'Today',
+                style: TextStyle(
+                  fontSize: 25,
+                  color: Colors.blue,
+                ),
+              ),
+            ],
+          ),
+          elevation: 0.0,
         ),
-        elevation: 0.0,
       ),
       body: Column(
         children: [
