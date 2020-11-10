@@ -64,6 +64,7 @@ class _WebViewContainerState extends State<WebViewContainer> {
           Expanded(
             child: Stack(children: [
               WebView(
+                gestureNavigationEnabled: true,
                 key: _key,
                 javascriptMode: JavascriptMode.unrestricted,
                 initialUrl: _url,
