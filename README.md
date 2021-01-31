@@ -1,1 +1,1 @@
-TinDog Starting Files
+Welcome to NewsToday App
